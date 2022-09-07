@@ -1,17 +1,42 @@
-# monitor
-前端监控 SDK DEMO，仅供学习，请勿在生产环境中使用。
+# Monitor-Koa2
 
-## DEMO
+![Overwacht](https://img.shields.io/badge/ui--lib-Elemnt-FFC429.svg)
+[![npm version](https://badge.fury.io/js/overwatch-ui.svg)](https://badge.fury.io/js/overwatch-ui)
+[![Build Status](https://travis-ci.org/Haixiang6123/overwatch-ui.svg?branch=master)](https://travis-ci.org/Haixiang6123/overwatch-ui)
+![](https://img.shields.io/npm/l/overwatch-ui.svg)
+## Introduction
 
-git clone 项目后，执行命令打开服务器。
+前端监控平台是自建的一款前端监控解决方案，专注于 Web 、移动端等场景监控。聚焦用户页面性能（页面监控，接口监控，CDN 监控等）和质量（JS 错误，Ajax 错误等），配合安装 对应SDK 进行项目部署中，简单配置，实现对用户页面质量的全方位守护，实时了解线上应用健康情况。
 
-```js
-npm run server
+### Built With
+
+[![Vue.js][Vue.js]][Vue.js]<br/>
+[![koa][koa]][koa]<br/>
+[![Rollup][Rollup]][Rollup]<br/>
+[![Github Actions][GithubAction]][GithubAction]<br/>
+## Preview
+
+
+<a href="https://github.com/Xinjn/mall-platform/issues">Report Bug</a>
+·
+<a href="https://github.com/Xinjn/mall-platform/issues">Request Feature</a>
+
+![img1](./public/images/img1.jpg)
+![img2](./public/images/img2.jpg)
+
+## Install
+```bash
+$ npm install 
+```
+
+## Development
+
+```bash
+$ npm run dev
 ```
 
 然后用 vscode 的 `live server` 插件访问 examples 目录上的 html 文件，即可尝试体验监控 SDK 的效果。同时打开开发者工具，点击 network 标签，可以看到上报数据的发送请求。
-
-## 使用
+## SDK
 
 ### 直接 HTML 文件中引入使用
 
@@ -50,3 +75,16 @@ mounted(){
     monitor.behavior.onClick()
 }
 ```
+
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+[Vue-url]: https://vuejs.org/
+[Vite]: https://img.shields.io/badge/Vite-35495E?style=for-the-badge&logo=Vite
+[vite-url]: https://vitejs.dev/
+[Element]: https://img.shields.io/badge/element-35495E?style=for-the-badge&logo=element
+[GithubAction]: https://img.shields.io/badge/Github%20Action-35495E?style=for-the-badge&logo=GitHub+Actions
+[koa]: https://img.shields.io/badge/koa-35495E?style=for-the-badge&logo=koa
+[Rollup]: https://img.shields.io/badge/Rollup-35495E?style=for-the-badge&logo=Rollup.js
