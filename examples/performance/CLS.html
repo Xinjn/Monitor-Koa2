@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>performance</title>
+    <!-- 引入 SDK -->
+    <script src="../../dist/monitor.js"></script>
+    <!-- 使用 SDK -->
+    <script>
+      // 初始化
+      monitor.init({
+        url: 'http://localhost:3000/api/reportData' // 上报地址
+      })
+      // 手动埋点：CLS
+      monitor.performance.CLS()
+    </script>
+    <style>
+      #box {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    性能监控：CLS
+    <div id="box" />
+    <script>
+      const box = document.getElementById('box')
+      console.log(box)
+      setTimeout(() => {
+        box.style.left += '100px'
+      }, 500)
+    </script>
+  </body>
+</html>
