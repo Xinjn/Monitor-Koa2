@@ -19,7 +19,7 @@ import { config } from '../config.js'
 
 // 判断浏览器是否存在 sendBeacon 属性
 function isSupportSendBeacon() {
-  return !!window.navigator?.sendBeacon
+  return window ? !!window?.navigator?.sendBeacon : ''
 }
 
 // sendBeacon：不支持 sendBeacon 的浏览器下我们可以使用 XMLHttpRequest 来进行上报

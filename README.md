@@ -10,8 +10,8 @@
 
 ### Built With
 
-[![Vue.js][Vue.js]][Vue.js]<br/>
 [![koa][koa]][koa]<br/>
+[![Jest][Jest]][Jest]<br/>
 [![Rollup][Rollup]][Rollup]<br/>
 [![Github Actions][GithubAction]][GithubAction]<br/>
 ## Preview
@@ -29,14 +29,19 @@
 $ npm install 
 ```
 
-## Development
+## Server
 
 ```bash
-$ npm run dev
+$ npm run server
 ```
 
 然后用 vscode 的 `live server` 插件访问 examples 目录上的 html 文件，即可尝试体验监控 SDK 的效果。同时打开开发者工具，点击 network 标签，可以看到上报数据的发送请求。
-## SDK
+
+## Development
+
+本地开发：部分实例中的使用的是打包构建后的SDK，所以需要修改指向为 src/index.js
+
+## [SDK](https://github.com/Xinjn/monitorSDK)
 
 ### 直接 HTML 文件中引入使用
 
@@ -76,6 +81,10 @@ mounted(){
 }
 ```
 
+## Test
+
+单元测试框架为 Jest
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
@@ -88,3 +97,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [GithubAction]: https://img.shields.io/badge/Github%20Action-35495E?style=for-the-badge&logo=GitHub+Actions
 [koa]: https://img.shields.io/badge/koa-35495E?style=for-the-badge&logo=koa
 [Rollup]: https://img.shields.io/badge/Rollup-35495E?style=for-the-badge&logo=Rollup.js
+[Jest]:https://img.shields.io/badge/jest-35495E?style=for-the-badge&logo=jest
